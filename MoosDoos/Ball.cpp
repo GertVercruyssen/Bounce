@@ -2,7 +2,7 @@
 #include <iostream>
 #include <cmath>
 
-Ball::Ball(int areaWidth, int areaHeight, int velocityX, int velocityY, int positionX, int positionY)
+Ball::Ball(int areaWidth, int areaHeight, float velocityX, float velocityY, int positionX, int positionY)
 {
     area.first = areaWidth;
     area.second = areaHeight;

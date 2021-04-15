@@ -8,7 +8,7 @@
 class Ball
 {
 public:
-    Ball(int areaX, int areaY, int velocityX, int velocityY, int positionX=0, int positionY=0);
+    Ball(int areaX, int areaY, float velocityX, float velocityY, int positionX=0, int positionY=0);
     void Draw();
     void Step();
     std::pair<float, float> GetPosition() { return pos; };
