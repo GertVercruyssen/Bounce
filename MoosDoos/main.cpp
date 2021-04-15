@@ -37,7 +37,7 @@ float Random()
 {
     srand (static_cast <unsigned> (time(0)));
     float test =static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
-    return ((test)*2) -1;
+    return ((test)*6) -3;
 }
 
 void Draw(const std::vector<Ball>& ballsArr)
@@ -72,7 +72,7 @@ void Draw(const std::vector<Ball>& ballsArr)
 int main(int argc, const char * argv[]) {
     //Ball ball1(areaWidth,areaHeight,1,-1,10,1);
     //Ball ball2(areaWidth,areaHeight,0,-1, 2 );
-    Ball ball1(areaWidth,areaHeight,Random(),Random(),10,1);
+    Ball ball1(areaWidth,areaHeight,Random(),Random()*-1,30,1);
     Ball ball2(areaWidth,areaHeight,Random(),Random(), 2 );
     std::vector<Ball> balls {ball1, ball2};
     for(int teller = 0; teller <2000; teller++)
